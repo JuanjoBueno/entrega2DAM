@@ -1,12 +1,15 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { Button, Text, View } from 'react-native';
 import React from 'react';
 
-export default function CountryScreen() {
+export default function CountryScreen(navigation) {
     return (
-        <View>
-            <Text>CountryScreen</Text>
+        <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+            <Text>Pasar a la pagina del mapa</Text>
+            <Button
+                title="Pulsa aqui."
+                onPress={() => navigation.navigate('Map')}
+            />
         </View>
     );
 }
 
-const styles = StyleSheet.create({});

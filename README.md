@@ -1,79 +1,109 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# Proyecto de Evaluación - Entrega nº 2: Creación de Componentes y Orígenes de Datos
 
-# Getting Started
+## Descripción del Proyecto
+Esta práctica tiene como objetivo diseñar una aplicación multiplataforma utilizando React Native (Bare React Native Project) y evaluar las habilidades en:
+- Creación de componentes reutilizables.
+- Implementación de orígenes de datos.
+- Uso de herramientas modernas como contextos, hooks y Redux.
+- Integración de APIs REST.
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+### Requerimientos del Proyecto
+1. **Integración con la API de RestCountries:**
+   - Diseñar una aplicación con estructura de navegación utilizando [React Navigation](https://reactnavigation.org/).
+   - Consumir los datos de la API [RestCountries](https://restcountries.com/#endpoints-all).
 
-## Step 1: Start the Metro Server
+2. **Pantallas y Navegación:**
+   - **Pantalla Principal:** Lista de continentes (FlatList).
+   - **Segunda Pantalla:** Lista de países de un continente (nombre, capital, lengua, bandera). Se requiere un componente reutilizable.
+   - **Tercera Pantalla:** Información detallada del país y localización en un mapa utilizando [react-native-open-street-map](https://github.com/enieber/react-native-open-street-map) o un componente similar.
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+3. **Diseño y Funcionalidades Adicionales:**
+   - Implementar un modo claro y oscuro.
+   - Permitir volver a la pantalla inicial desde cualquier pantalla.
+   - Utilizar contextos, hooks o Redux para la gestión del estado.
 
-To start Metro, run the following command from the _root_ of your React Native project:
+### Entrega
+- **Fecha:** 13 de diciembre de 2024.
+- **Formato:** Documento PDF con enlace al repositorio de GitHub.
 
-```bash
-# using npm
-npm start
+---
 
-# OR using Yarn
-yarn start
-```
+## Criterios de Evaluación
 
-## Step 2: Start your Application
+### 1. Esquema de Navegación (20 puntos)
+- **20 puntos:** Navegación fluida y estructurada entre todas las pantallas.
+- **15 puntos:** Navegación funcional con algunos problemas menores.
+- **10 puntos:** Navegación básica con problemas de estructura.
+- **0 puntos:** Navegación no implementada o defectuosa.
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+### 2. Implementación de Listas con FlatList (20 puntos)
+- **20 puntos:** Uso eficiente de FlatList en todas las listas (continentes, países, detalles).
+- **15 puntos:** Listas funcionales con problemas menores de rendimiento.
+- **10 puntos:** Listas implementadas sin optimización adecuada.
+- **0 puntos:** Listas no implementadas o con errores graves.
 
-### For Android
+### 3. Componente Reutilizable para los Países (15 puntos)
+- **15 puntos:** Componente flexible y reutilizable.
+- **10 puntos:** Componente reutilizable con margen de mejora.
+- **5 puntos:** Componente estático o mal implementado.
+- **0 puntos:** Componente no implementado.
 
-```bash
-# using npm
-npm run android
+### 4. Integración con la API de RestCountries (15 puntos)
+- **15 puntos:** Integración completa y manejo adecuado de errores.
+- **10 puntos:** Integración funcional con problemas menores.
+- **5 puntos:** Integración incompleta o con errores importantes.
+- **0 puntos:** Integración no implementada.
 
-# OR using Yarn
-yarn android
-```
+### 5. Visualización en OpenStreetMap (10 puntos)
+- **10 puntos:** Localización precisa y eficiente.
+- **7 puntos:** Localización funcional con problemas menores.
+- **4 puntos:** Implementación parcial o defectuosa.
+- **0 puntos:** Integración no funcional.
 
-### For iOS
+### 6. Diseño Claro y Oscuro (10 puntos)
+- **10 puntos:** Implementación atractiva y funcional para ambos modos.
+- **7 puntos:** Modo claro y oscuro con detalles por mejorar.
+- **4 puntos:** Implementación parcial o diseño deficiente.
+- **0 puntos:** Modos no implementados.
 
-```bash
-# using npm
-npm run ios
+### 7. Uso de Contextos y/o Hooks (10 puntos)
+- **10 puntos:** Uso eficiente de contextos y hooks.
+- **7 puntos:** Uso funcional con margen de mejora.
+- **4 puntos:** Uso limitado o innecesario.
+- **0 puntos:** No se usan adecuadamente.
 
-# OR using Yarn
-yarn ios
-```
+### 8. Diseño y Estilo (10 puntos)
+- **10 puntos:** Diseño moderno, coherente y fluido.
+- **7 puntos:** Diseño funcional pero con detalles mejorables.
+- **4 puntos:** Diseño básico o poco atractivo.
+- **0 puntos:** Diseño deficiente.
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+### 9. Manejo de Estado y Optimización (5 puntos)
+- **5 puntos:** Manejo eficiente del estado y rendimiento fluido.
+- **3 puntos:** Manejo adecuado con problemas menores.
+- **1 punto:** Problemas importantes de rendimiento.
+- **0 puntos:** Manejo de estado deficiente.
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+### 10. Documentación y Código Limpio (5 puntos)
+- **5 puntos:** Código bien organizado, documentado y claro.
+- **3 puntos:** Código organizado pero con documentación insuficiente.
+- **1 punto:** Código desordenado y sin documentación.
+- **0 puntos:** Código confuso y sin documentar.
 
-## Step 3: Modifying your App
+---
 
-Now that you have successfully run the app, let's modify it.
+## Tecnologías y Herramientas Recomendadas
+- **React Native**
+- **React Navigation**
+- **RestCountries API**
+- **react-native-open-street-map** o equivalente
+- **Context API**
+- **Hooks**
+- **Redux con Query (opcional)**
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+---
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
+## Enlace al Repositorio
+[Enlace al proyecto en GitHub](#)
 
-## Congratulations! :tada:
 
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
