@@ -104,6 +104,6 @@ Esta práctica tiene como objetivo diseñar una aplicación multiplataforma util
 ---
 
 ## Enlace al Repositorio
-[Enlace al proyecto en GitHub](#)
+[https://github.com/JuanjoBueno/entrega2DAM](#)
 
 
