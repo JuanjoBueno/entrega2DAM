@@ -5,7 +5,6 @@ import HomeScreen from './src/screens/HomeScreen';
 import CountryScreen from './src/screens/CountryScreen';
 import MapScreen from './src/screens/MapScreen';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import AwesomeIcon from 'react-native-vector-icons/FontAwesome';
 
 
 
