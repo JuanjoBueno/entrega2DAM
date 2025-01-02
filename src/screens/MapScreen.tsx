@@ -1,15 +1,24 @@
-import { Button, Text, View } from 'react-native';
 import React from 'react';
+import { View, Text, Button } from 'react-native';
+import commonStyles from '../styles';
 
-export default function MapScreen(navigation) {
+type Props = {
+    navigation: {
+        navigate: (screen: string) => void;
+    };
+};
+
+export default function HomeScreen({ navigation }: Props) {
     return (
-        <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-            <Text>MapScreen</Text>
+        <View style={commonStyles.container}>
+            <Text style={commonStyles.titleText}>Pasar a la pantalla de los países</Text>
             <Button
-                title="pulsa para volver a home"
+                title="Pulsa aquí"
                 onPress={() => navigation.popToTop()}
+                color="#007BFF"
             />
         </View>
     );
 }
+
 
