@@ -1,7 +1,7 @@
-import {Flags} from '../responses/dataCountries';
+import {Flags, Name} from '../responses/dataCountries';
 
 export interface Country {
-  name: string;
+  name: Name;
   capital?: string[];
   languages?: {[key: string]: string};
   flags: Flags;

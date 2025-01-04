@@ -1,4 +1,8 @@
-export interface Paises {
+export interface CountriesResponse {
+  country: Result[];
+}
+
+export interface Result {
   name: Name;
   tld?: string[];
   cca2: string;
