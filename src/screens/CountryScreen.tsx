@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text, Button } from 'react-native';
-import commonStyles from '../styles';
+import CountriesCard from '../components/CountriesCard';
+
 
 type Props = {
     navigation: {
@@ -10,8 +11,10 @@ type Props = {
 
 export default function HomeScreen({ navigation }: Props) {
     return (
-        <View style={commonStyles.container}>
-            <Text style={commonStyles.titleText}>Ir a informacion adicional</Text>
+        <View>
+            <Text>Ir a informacion adicional</Text>
+            <CountriesCard></CountriesCard>
+            <CountriesCard></CountriesCard>
             <Button
                 title="Pulsa aquí"
                 onPress={() => navigation.navigate("Map")}
