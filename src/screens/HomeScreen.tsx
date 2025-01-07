@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, Button } from 'react-native';
-import { ContinentList } from '../components/ContinentList';
+import ContinentList from '../components/ContinentList';
 
 type Props = {
     navigation: {
@@ -11,13 +11,16 @@ type Props = {
 export default function HomeScreen({ navigation }: Props) {
     return (
         <View>
+            <ContinentList>
+
+            </ContinentList>
             <Text>Pasar a la pantalla de los países</Text>
             <Button
                 title="Pulsa aquí"
                 onPress={() => navigation.navigate("Country")}
                 color="#007BFF"
             />
-            <ContinentList></ContinentList>
+
         </View>
     );
 }
